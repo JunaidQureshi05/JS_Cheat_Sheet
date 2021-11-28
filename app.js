@@ -5,8 +5,9 @@ console.log('heyy there I am Javascript');
 
 // Data types in Javascript
 // five primitive datatypes - strings, numbers, booleans, undefined, and null
-console.log(typeof 12);
 console.log(typeof 'Junaid');
+console.log(typeof 12);
+console.log(typeof true);
 console.log(typeof undefined);
 console.log(typeof null);
 
