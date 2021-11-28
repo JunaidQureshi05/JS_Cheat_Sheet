@@ -125,3 +125,106 @@ console.log(a);
 // /=	x /= y	x = x / y
 // %=	x %= y	x = x % y
 // **=	x **= y	x = x ** y
+
+// Conditionals in JavaScript
+
+// Use if to specify a block of code to be executed, if a specified condition is true
+// Use else to specify a block of code to be executed, if the same condition is false
+// Use else if to specify a new condition to test, if the first condition is false
+
+// If Else Syntax
+// if(condtion){
+//   this block will run if condition is true
+// }
+// else{
+//   this block will run if condition is false
+// }
+
+// Example
+// let age = 18;
+// if (age) {
+//   console.log('Condition is true');
+// } else {
+//   console.log('Condition is false');
+// }
+
+// If Elseif Else
+// if(condition1){
+//   run this if condition1 is true
+// }
+// else if(condition2){
+// run this if condition1 is false but condtion2 is true
+// }else{
+//   run this is if neither of the condition is true
+// }
+
+// Example
+// let age = 10;
+// if (age >= 18) {
+//   console.log('You are an adult');
+// } else if (age >= 12) {
+//   console.log('You are a teen');
+// } else {
+//   console.log('You are a minor');
+// }
+
+// Ternary operator
+// The conditional (ternary) operator is the only JavaScript operator that takes three operands: a condition followed by a question mark (?), then an expression to execute if the condition is truthy followed by a colon (:), and finally the expression to execute if the condition is falsy.Basically it is shorthand way if writing if else conditional.
+// Syntax
+// condition?run if true:run if false
+
+// Example
+// let name = 'Junaid';
+// name === 'Junaid'
+//   ? console.log('Hello Junaid!!!')
+//   : console.log("I don't know you!");
+
+// Switch Statement
+// The switch statement is used to perform different actions based on different conditions.
+// Use the switch statement to select one of many code blocks to be executed.
+// Syntax
+// switch(expression) {
+//   case x:
+//     // code block
+//     break;
+//   case y:
+//     // code block
+//     break;
+//   default:
+//     // code block
+// }
+
+// This is how it works:
+// The switch expression is evaluated once.
+// The value of the expression is compared with the values of each case.
+// If there is a match, the associated block of code is executed.
+// If there is no match, the default code block is executed.
+// When JavaScript reaches a break keyword, it breaks out of the switch block.
+// This will stop the execution inside the switch block.
+// It is not necessary to break the last case in a switch block. The block breaks (ends) there anyway.
+// Example
+// let day;
+// switch (new Date().getDay()) {
+//   case 0:
+//     day = 'Sunday';
+//     break;
+//   case 1:
+//     day = 'Monday';
+//     break;
+//   case 2:
+//     day = 'Tuesday';
+//     break;
+//   case 3:
+//     day = 'Wednesday';
+//     break;
+//   case 4:
+//     day = 'Thursday';
+//     break;
+//   case 5:
+//     day = 'Friday';
+//     break;
+//   case 6:
+//     day = 'Saturday';
+// }
+
+// console.log(day);
