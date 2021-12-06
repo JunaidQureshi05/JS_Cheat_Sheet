@@ -228,3 +228,117 @@ console.log(a);
 // }
 
 // console.log(day);
+
+// Loops in javascripts
+// Loops can execute a block of code a number of times.
+// Instead of writing:
+// text += cars[0] + "<br>";
+// text += cars[1] + "<br>";
+// text += cars[2] + "<br>";
+// text += cars[3] + "<br>";
+// text += cars[4] + "<br>";
+// text += cars[5] + "<br>";
+// You can write:
+// for (let i = 0; i < cars.length; i++) {
+//    text += cars[i] + "<br>";
+// }
+
+// Different kind of loops
+
+// JavaScript supports different kinds of loops:
+
+// for - loops through a block of code a number of times
+// for/in - loops through the properties of an object
+// for/of - loops through the values of an iterable object
+// while - loops through a block of code while a specified condition is true
+// do/while - also loops through a block of code while a specified condition is true
+
+// 1) The For Loop
+// The for loop has the following syntax:
+
+// for (statement 1; statement 2; statement 3) {
+//   // code block to be executed
+// }
+// Statement 1 is executed (one time) before the execution of the code block.
+
+// Statement 2 defines the condition for executing the code block.
+
+// Statement 3 is executed (every time) after the code block has been executed.
+
+// Example
+// for (let i = 0; i < 5; i++) {
+//   text += "The number is " + i + "<br>";
+// }
+
+// Statement 1
+// Normally you will use statement 1 to initialize the variable used in the loop (let i = 0).
+
+// This is not always the case, JavaScript doesn't care. Statement 1 is optional.
+
+// You can initiate many values in statement 1 (separated by comma):
+
+// Example
+// for (let i = 0, len = cars.length, text = ""; i < len; i++) {
+//   text += cars[i] + "<br>";
+// }
+
+//And you can omit statement 1 (like when your values are set before the loop starts):
+
+// Example
+// let i = 2;
+// let len = cars.length;
+// let text = "";
+// for (; i < len; i++) {
+//   text += cars[i] + "<br>";
+// }
+
+// Statement 2
+// Often statement 2 is used to evaluate the condition of the initial variable.
+
+// This is not always the case, JavaScript doesn't care. Statement 2 is also optional.
+
+// If statement 2 returns true, the loop will start over again, if it returns false, the loop will end.
+
+// If you omit statement 2, you must provide a break inside the loop. Otherwise the loop will never end. This will crash your browser. Read about breaks in a later chapter of this tutorial.
+
+// Statement 3
+// Often statement 3 increments the value of the initial variable.
+
+// This is not always the case, JavaScript doesn't care, and statement 3 is optional.
+
+// Statement 3 can do anything like negative increment (i--), positive increment (i = i + 15), or anything else.
+
+// Statement 3 can also be omitted (like when you increment your values inside the loop):
+
+// Example
+// let i = 0;
+// let len = cars.length;
+// let text = "";
+// for (; i < len; ) {
+//   text += cars[i] + "<br>";
+//   i++;
+// }
+
+// 2)The While Loop
+// Syntax
+// while(condition){
+//   code block
+// }
+
+// 3)The Do While Loops
+// Syntax
+// do{
+// block of code
+// }while(condition)
+
+// 4) For in
+// Syntax
+// for(property in object){
+//   code
+// }
+
+// 5)For of
+// Syntax
+// for(value in object ){
+//   code
+// }
