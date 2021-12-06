@@ -339,6 +339,6 @@ console.log(a);
 
 // 5)For of
 // Syntax
-// for(value in object ){
+// for(value of object ){
 //   code
 // }
